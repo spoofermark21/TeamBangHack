@@ -78,7 +78,7 @@
                <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md-10">
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1000">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
                           <ol class="carousel-indicators">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -86,7 +86,7 @@
                           </ol>
                           <div class="carousel-inner" role="listbox">
                             <div class="active item">
-                              <img src="../images/pic1.jpg" width="100%" height="20%" style="border-radius:10px;" alt="First slide">
+                              <img src="../images/pic2.jpg" width="100%" height="20%" alt="First slide">
                               <div class="container">
                                 <div class="carousel-caption">
                                     <h4> Project: Clean Green Project </h4>
@@ -95,7 +95,7 @@
                               </div>
                             </div>
                             <div class="item">
-                              <img src="../images/pic2.jpg" width="100%" height="20%" style="border-radius:10px;" alt="Second slide">
+                              <img src="../images/pic1.jpg" width="100%" height="20%" alt="Second slide">
                               <div class="container">
                                 <div class="carousel-caption">
                                   <h4> Project: Coastal Clean-up</h4>
@@ -104,7 +104,7 @@
                               </div>
                             </div>
                             <div class="item">
-                              <img src="../images/3.jpg" width="100%" height="20%" style="border-radius:10px;" alt="Third slide">
+                              <img src="../images/3.jpg" width="100%" height="20%" alt="Third slide">
                               <div class="container">
                                 <div class="carousel-caption">
                                   <h4> Project: Tree of Life </h4>
