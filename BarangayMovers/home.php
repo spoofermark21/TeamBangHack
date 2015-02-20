@@ -204,7 +204,7 @@
                         <b>Juan Dela Cruz</b><br/>Jun 20, 2017
                     </div>
                     
-                    <div class="col-md-12" style="background-color:#B3DDE1  ">
+                    <div class="col-md-12" style="background-color:#E4E4E4  ">
                         <br/>Barangay Tipolo<hr/>Baho kaayo ang kanal dre dapit sa amoa.. daghan na ang nireklamo.
                         <center><img src="../images/sample1.jpg" width="50%" style="border: solid 1px;"/></center>
                         <br/><span style = "float:left:"><input type="button" class="btn btn-default"value="Raise concern"/>&nbsp;&nbsp;&nbsp;<font color="blue">160</font>&nbsp;&nbsp;&nbsp;votes<hr/>
