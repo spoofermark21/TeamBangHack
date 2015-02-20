@@ -197,9 +197,7 @@
             <br/>
             <div class="container jumbotron" style="border-radius:10px; width: 72%;">
                   <div class="container">
-                    <div class="col-md-1 .col-md-offset-1">
-                      <img class="profile-img" src="../images/user1.png" alt="" width="100%">
-                                  </div>
+                    
                     <?php
                          $db_con = mysqli_connect("localhost", "root", "", "barangaymovers");
 
@@ -214,7 +212,9 @@
                             $row_num = mysqli_num_rows($result);
                             if ($row_num > 0) {
                                 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
-                                   echo '
+                                   echo '<div class="col-md-1 .col-md-offset-1">
+                      <img class="profile-img" src="../images/user1.png" alt="" width="100%">
+                    </div>
                                   <div class="col-md-7 .col-md-offset-1">
                                       <b> ' . $row['project_uploader'] . '</b><br/>Jun 20, 2017
                                   </div>
