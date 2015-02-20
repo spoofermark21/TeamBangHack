@@ -50,6 +50,7 @@ if ($uploadOk == 0) {
     	$topic = $_POST['title'];
 		$desc = $_POST['description'];
 		$location = $_POST['cmb_brgy'];
+        $user = $_SESSION['user'];
 		$random_project = 0;
 
 		$db_con = mysqli_connect("localhost", "root", "", "barangaymovers");
@@ -74,7 +75,8 @@ if ($uploadOk == 0) {
         }
         
         try {
-        	if (mysqli_query($db_con, "INSERT INTO `project_details` (`project_filename`,`project_title`,`project_description`,`project_location`,`project_status`,`project_id`)VALUES('$file_name','$topic','$desc','$location','0',$random_project)")) {
+            
+        	if (mysqli_query($db_con, "INSERT INTO `project_details` (`project_filename`,`project_uploader`,`project_title`,`project_description`,`project_location`,`project_status`,`project_id`)VALUES('$file_name','$user','$topic','$desc','$location','0',$random_project)")) {
         		echo "successful";
      		}
         } catch (Exception $e) {

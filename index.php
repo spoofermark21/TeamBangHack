@@ -25,7 +25,9 @@
             /* determine number of rows result set */
             $row_num = mysqli_num_rows($result);
             if ($row_num > 0) {
+                $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
                 $_SESSION['isLogin'] = '1';
+                $_SESSION['user'] =  $row['resident_fname'] . $row['resident_lname'];
                 header('Location: BarangayMovers/home.php');
             } else {
                 $error = 'Please check inputs and try again.';

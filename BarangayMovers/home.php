@@ -215,7 +215,7 @@
                                 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
                                    echo '
                                   <div class="col-md-7 .col-md-offset-1">
-                                      <b> ' . 'hello' . '</b><br/>Jun 20, 2017
+                                      <b> ' . $row['project_uploader'] . '</b><br/>Jun 20, 2017
                                   </div>
                                   
                                   <div class="col-md-12" style="background-color:#B3DDE1  ">
