@@ -198,16 +198,39 @@
                   <div class="container">
                     <div class="col-md-1 .col-md-offset-1">
                       <img class="profile-img" src="../images/user1.png" alt="" width="100%">
-                    </div>
-                    <div class="col-md-7 .col-md-offset-1">
-                        <b>Juan Dela Cruz</b><br/>Jun 20, 2017
-                    </div>
+                                  </div>
+                    <?php
+                         $db_con = mysqli_connect("localhost", "root", "", "barangaymovers");
+
+                        if (mysqli_connect_errno()) {
+                            printf("Connect failed: \n" . mysqli_connect_error());
+                            exit();
+                        }
+
+                        if ($result = mysqli_query($db_con, "SELECT * FROM project_details")) {
+
+                            /* determine number of rows result set */
+                            $row_num = mysqli_num_rows($result);
+                            if ($row_num > 0) {
+                                while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+                                   echo '
+                                  <div class="col-md-7 .col-md-offset-1">
+                                      <b> ' . 'hello' . '</b><br/>Jun 20, 2017
+                                  </div>
+                                  
+                                  <div class="col-md-12" style="background-color:#B3DDE1  ">
+                                      <br/> ' . $row['project_location'] . '<hr/> ' . $row['project_description'] . '
+                                      <center><img src=" ../database/uploads/' . $row['project_filename'] . '" width="50%" style="border: solid 1px;"/></center>
+                                      <br/><span style = "float:left:"><input type="button" class="btn btn-default"value="Raise concern"/>&nbsp;&nbsp;&nbsp;<font color="blue">160</font>&nbsp;&nbsp;&nbsp;votes<hr/>
+                                  </div>';
+                                }
+                                
+                            } 
+                            
+                        }
+                   
+                    ?>
                     
-                    <div class="col-md-12" style="background-color:#B3DDE1  ">
-                        <br/>Barangay Tipolo<hr/>Baho kaayo ang kanal dre dapit sa amoa.. daghan na ang nireklamo.
-                        <center><img src="../images/sample1.jpg" width="50%" style="border: solid 1px;"/></center>
-                        <br/><span style = "float:left:"><input type="button" class="btn btn-default"value="Raise concern"/>&nbsp;&nbsp;&nbsp;<font color="blue">160</font>&nbsp;&nbsp;&nbsp;votes<hr/>
-                    </div>
                   </div>
             </div>
         </div>
