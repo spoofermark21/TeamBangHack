@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 20, 2015 at 12:27 PM
+-- Generation Time: Feb 20, 2015 at 04:25 PM
 -- Server version: 5.1.41
 -- PHP Version: 5.3.1
 
@@ -50,6 +50,7 @@ INSERT INTO `official_details` (`official_fname`, `official_lname`, `official_mi
 
 CREATE TABLE IF NOT EXISTS `project_details` (
   `project_filename` varchar(20) NOT NULL,
+  `project_uploader` varchar(30) NOT NULL,
   `project_title` varchar(20) NOT NULL,
   `project_description` text NOT NULL,
   `project_location` varchar(20) NOT NULL,
@@ -62,8 +63,8 @@ CREATE TABLE IF NOT EXISTS `project_details` (
 -- Dumping data for table `project_details`
 --
 
-INSERT INTO `project_details` (`project_filename`, `project_title`, `project_description`, `project_location`, `project_status`, `project_id`) VALUES
-('', 'Coastal Clean-up', 'I think that this site could be one of our barangay''s attraction but hugaw lang kaayu due to basura nga ilabay lang sa dagat. If pwede unta ni ma maintain sa barangay mas maayu unta. ', 'Camansi Zone', '0', 10001);
+INSERT INTO `project_details` (`project_filename`, `project_uploader`, `project_title`, `project_description`, `project_location`, `project_status`, `project_id`) VALUES
+('', '', 'Coastal Clean-up', 'I think that this site could be one of our barangay''s attraction but hugaw lang kaayu due to basura nga ilabay lang sa dagat. If pwede unta ni ma maintain sa barangay mas maayu unta. ', 'Camansi Zone', '0', 10001);
 
 -- --------------------------------------------------------
 
