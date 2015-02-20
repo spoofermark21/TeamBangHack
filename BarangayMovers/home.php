@@ -61,8 +61,8 @@
     </header>
 
     <div class="row jumbotron" id="homepage">
-        <div class="col-md-3" style="background-color:white; border-radius:10px;"><br/>
-               <ul class="nav nav-pills nav-stacked">
+        <div class="col-md-3" style="background-color:white; border-radius:10px; height: 550px;"><br/>&nbsp;&nbsp;&nbsp;<b>List of Barangays:</b><br/><br/>
+          <ul class="nav nav-pills nav-stacked">
                   <li><a href="#">Paknaan</a></li>
                   <li><a href="#">Looc</a></li>
                   <li><a href="#">Tipolo</a></li>
@@ -71,7 +71,7 @@
                   <li><a href="#">Wireless</a></li>
                   <li><a href="#">Subangdako</a></li>
                   <li><a href="#">Paradise</a></li>
-               </ul>
+          </ul>
         </div>
 
         <div class="col-md-8" style="border-radius:10px;">
