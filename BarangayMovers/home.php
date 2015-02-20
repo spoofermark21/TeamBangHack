@@ -125,7 +125,8 @@
                     </div>
                </div>
         </div>
-    </div>       
+    </div>    
+
     <div class="row" id="projectsection">
         <div class="col-md-12"  style="background-color:#E4E4E4; height:auto;">
             <div class="row">
@@ -273,6 +274,8 @@
     <script src="css/bootstrap/js/jquery.js"></script>
     <script src="css/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/clean-blog.min.js"></script>
-</body>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../css/bootstrap/js/bootstrap.min.js"></script>
+</body>
 </html>
