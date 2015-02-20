@@ -38,7 +38,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#homepage">HOME</a></li>
                     <li><a href="#projectsection">PROJECTS</a></li>
-                    <li><a href="post.html">GALLERY</a></li>
+                    <li><a href="#gallerysection">GALLERY</a></li>
                     <li><a href="#aboutUs">ABOUT US</a></li>
                     <li><a href="../functions/logout.php">LOG-OUT</a></li>
                 </ul>
@@ -236,6 +236,26 @@
         </div>
     </div>
 
+    <div class="row" id="gallerysection">
+        <div class="col-md-12"  style="background-color:white; height:auto;"> <hr/>
+          <div class="container">
+            <div class="row" style="background-color:#f6f6;">
+              <div class="col-md-9 .col-md-offset-1">
+                <div class="row" style="border-radius:10px;">
+                  <div class="col-md-12" style="border-radius:20px;">
+                    <div class="col-md-5 .col-md-offset-1">
+                      <img src="../images/1.jpg" width="100%" style="border-radius:20px;"/><hr/>                  
+                      <img src="../images/2.jpg" width="100%" style="border-radius:20px;"/><hr/>                  
+                      <img src="../images/3.jpg" width="100%" style="border-radius:20px;"/><hr/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <br/>
+            </div>
+        </div>
+      </div>
+    </div>
 
     <div class="row"  id="aboutUs">
             <footer class="footer" style="background-color:#94EB65; height:550px;">
