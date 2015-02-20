@@ -1,2 +1,2 @@
-# TeamBangHack
+# TeamBang
 BarangayMovers.ph
